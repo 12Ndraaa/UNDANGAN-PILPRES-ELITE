@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Orbitron", serif;
+    src: url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&display=swap);
+    font-family: "Bebas Neue", serif;
+    src: url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hammersmith+One&display=swap);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Orbitron", serif !important;
+}
+
+.header{
+    font-family: Bebas Neue;
+
+}
+
+ul{
+    list-style: none;
+    margin-right: 35px;
+}
