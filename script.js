@@ -32,3 +32,27 @@ const sertijabDate = new Date('2025-01-25T13:00:00');
 
 countdown(pilpresDate, 'countdown-pilpres');
 countdown(sertijabDate, 'countdown-sertijab');
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+
+let audioElement = document.getElementById('background-audio');
+let muteIcon = document.getElementById('mute-icon');
+
+function toggleAudio() {
+    if (audioElement.muted) {
+        audioElement.muted = false;
+        muteIcon.classList.remove('bi-volume-mute-fill');
+        muteIcon.classList.add('bi-volume-up-fill');
+    } else {
+        audioElement.muted = true;
+        muteIcon.classList.remove('bi-volume-up-fill');
+        muteIcon.classList.add('bi-volume-mute-fill');
+    }
+}
