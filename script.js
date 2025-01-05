@@ -56,3 +56,8 @@ function toggleAudio() {
         muteIcon.classList.add('bi-volume-mute-fill');
     }
 }
+
+  window.onload = function() {
+    var audioElement = document.getElementById("background-audio");
+    audioElement.play();
+  };
