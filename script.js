@@ -57,4 +57,6 @@ function toggleAudio() {
     }
 }
 
-document.querySelector('audio').muted = false;
+document.addEventListener('click', function() {
+    document.querySelector('audio').play();
+}, { once: true });
