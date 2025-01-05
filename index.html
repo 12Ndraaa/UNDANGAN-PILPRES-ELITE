@@ -17,31 +17,44 @@
   <header style="background-color: #FF6F00;"><h1>Undangan Pemilihan Presiden ELITE</h1>
     <h1>2024 - 2025</h1>
   </header>
+  <audio id="background-audio" autoplay loop>
+    <source src="./assets/backsoundundangan.mp3" type="audio/mpeg">
+  </audio>
+  <i id="mute-icon" class="bi bi-volume-mute-fill" 
+  style="color: #212121; font-size: 2rem; position: fixed; bottom: 20px; right: 20px; cursor: pointer; z-index: 9999;"
+  onclick="toggleAudio()"></i>
+  <div style="background: url('./assets/WALLPAPER.png') no-repeat center center/cover; text-align: center; padding: 50px 20px;">
+    <h1 style="color: white; font-family: 'Bebas Neue', sans-serif;">Selamat Datang di Undangan Pemilihan Presiden ELITE 2024-2025</h1>
+    <a class="btn btn-light mt-3" href="#jadwal">Buka Undangan</a>
+  </div>
   <br>
     <h1 style="color: #212121; font-family: 'Bebas Neue', sans-serif;">Assalamualaikum Wr. Wb.</h1>
     <p style="color: #FF6F00; font-family: 'Bebas Neue', sans-serif; font-size: larger;">
         Salam hangat dan salam sejahera bagi kita semua, semoga kita senantiasa diberikan rahmat dan keberkahan dari Tuhan Yang Maha Esa. Kami beritahukan adanya pelaksanaan Pemilihan Presiden ELITE 2024-2025 dan juga Sertijab pada bulan Januari yang akan mendatang. Kami mengharapkan kehadiran kepada Anggota ELITE yang akan diselenggarakan pada :</p>
 
-        <ul style="color: #FF6F00;">
-          <li>
-              <h1 style="color: #212121;">Pilpres</h1>
-              Hari & Tanggal : Sabtu, 18 Januari 2025
-              <br>
-              Waktu : 13.00-selesai
-              <br>
-              Tempat : RB 7 SMKN 2 Surabaya
-              <div style="color: #212121; font-size: 20px;" id="countdown-pilpres"></div>
-          </li>
-          <li>
-              <h1 style="color: #212121;">Sertijab</h1>
-              Hari & Tanggal : Sabtu, 25 Januari 2025
-              <br>
-              Waktu : 13.00-selesai
-              <br>
-              Tempat : Aula luar SMKN 2 Surabaya
-              <div style="color: #212121; font-size: 20px;" id="countdown-sertijab"></div>
-          </li>
-      </ul>
+        <div id="jadwal">
+          <ul style="color: #FF6F00;">
+            <li>
+                <h1 style="color: #212121;">Pilpres</h1>
+                Hari & Tanggal : Sabtu, 18 Januari 2025
+                <br>
+                Waktu : 13.00-selesai
+                <br>
+                Tempat : RB 7 SMKN 2 Surabaya
+                <div style="color: #212121; font-size: 20px;" id="countdown-pilpres"></div>
+            </li>
+            <li>
+                <h1 style="color: #212121;">Sertijab</h1>
+                Hari & Tanggal : Sabtu, 25 Januari 2025
+                <br>
+                Waktu : 13.00-selesai
+                <br>
+                Tempat : Aula luar SMKN 2 Surabaya
+                <div style="color: #212121; font-size: 20px;" id="countdown-sertijab"></div>
+            </li>
+        </ul>
+        </div>
+
 <hr>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="500">
       <div class="carousel-inner">
@@ -150,7 +163,7 @@
       </div>
     </div>
   </div>
-  <div  style="background-color: #FF6F00;" class="footer">
+  <div style="background-color: #FF6F00;" class="footer">
     <p style="font-family: 'Bebas Neue', sans-serif; font-size: larger;" class="text-light">
       Oleh karena itu, kami mengharapkan kedatangan Anggota ELITE untuk dapat berpartisipasi pada kegiatan Pemilihan Presiden ELITE 2024-2025. Dengan demikian undangan kami sampaikan, atas perhatiannya kami ucapkan terimakasih.
     </p>
@@ -163,4 +176,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 </html>
