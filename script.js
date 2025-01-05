@@ -58,6 +58,10 @@ function toggleAudio() {
 }
 
   window.onload = function() {
-    var audioElement = document.getElementById("background-audio");
-    audioElement.play();
+    setTimeout(function() {
+      var audioElement = document.getElementById('background-audio');
+      audioElement.play().catch(function(error) {
+        console.log('Auto-play failed:', error);
+      });
+    }, 1000); // Tunggu 1 detik sebelum memulai audio
   };
