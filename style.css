@@ -1,9 +1,7 @@
 
 @font-face {
-    font-family: "Orbitron", serif;
-    src: url(https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Orbitron:wght@400..900&display=swap);
-    font-family: "Hammersmith One", serif;
-    src: url(https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Orbitron:wght@400..900&display=swap);
+    font-family: "Orbitron", "Bebas Neue", "Hammersmith One", serif;
+    src: url(https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hammersmith+One&family=Orbitron:wght@400..900&display=swap);
 }
 
 body{
